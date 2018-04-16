@@ -11,8 +11,8 @@ def input_to_index(num)
 end
 
 def valid_move?(board, index)
-  return false if !position_taken?(board, index) || !index.between?(0, 8)
-  true
+  return true if !position_taken?(board, index) || !index.between?(0, 8)
+  false
 end
 
 def position_taken?(board, index)
