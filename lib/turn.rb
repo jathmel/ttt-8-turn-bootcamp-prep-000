@@ -40,9 +40,7 @@ def turn(board)
     # puts "Please enter either X or O"
     move(board, index)
   else 
-    until valid_move(index)
-      turn(board)
-    end 
+    turn(board)
   end
   input
 end
