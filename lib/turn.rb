@@ -38,7 +38,7 @@ def turn(board)
   index = input_to_index(input)
   if index >= 0 && index < board.length
     # puts "Please enter either X or O"
-    move
+    move(board, index)
     display_board(board)
   else 
     turn(board)
