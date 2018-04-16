@@ -37,7 +37,7 @@ def turn(board)
   input = gets.strip
   index = input_to_index(input)
   if valid_move?(board, index)
-    puts "Please enter either X or O"
+    # puts "Please enter either X or O"
     move(board, index)
   else 
     until valid_move(index)
